@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Toggle Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+        }
+
+        .logo-image img {
+            width: 150px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            font-size: 25px;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: #f8f8f8;
+            padding: 10px 5%;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .navigation li {
+            font-size: 15px;
+        }
+
+        /* Hamburger Menu Styles */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hide checkbox */
+        #menu-checkbox {
+            display: none;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .navigation {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #f8f8f8;
+                padding: 20px 0;
+            }
+
+            /* Make the navigation visible when the checkbox is checked */
+            #menu-checkbox:checked~.navbar .navigation {
+                display: flex;
+            }
+        }
+
+        /* Hamburger menu transition when clicked */
+        #menu-checkbox:checked+.hamburger div:nth-child(1) {
+            transform: rotate(45deg);
+            position: relative;
+            top: 8px;
+        }
+
+        #menu-checkbox:checked+.hamburger div:nth-child(2) {
+            opacity: 0;
+        }
+
+        #menu-checkbox:checked+.hamburger div:nth-child(3) {
+            transform: rotate(-45deg);
+            position: relative;
+            top: -8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-image">
+                <img src="/Phuljhadi-logo.png" alt="logo">
+            </div>
+            <div class="icon">
+                <i class="fa fa-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <input type="checkbox" id="menu-checkbox">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">SHOP BY COLLECTION</li>
+            <li class="item">JEWELLERY</li>
+            <li class="item">HANDMADE JEWELLERY</li>
+            <li class="item">BAGS</li>
+            <li class="item">SUNGLASSES</li>
+            <li class="item">3 EARINGS FOR 1000</li>
+            <li class="item">3 NECKLACE FOR 1500</li>
+            <li class="item">FOOTWEAR</li>
+            <li class="item">VISIT STORE</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+/* Section Titles */
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* About Me Section */
+.about .content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
+}
+
+/* Skills Progress Bars */
+.progress-bar-wrap {
+    background: #f3f3f3;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background: #20b38e;
+    height: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .about .content {
+        padding-top: 20px;
+    }
+
+    .skills-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+}
+
+footer .nav-link {
+    color: #6c757d;
+}
+
+footer .nav-link:hover {
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+
+    footer .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .d-flex .nav {
+        justify-content: center;
+    }
+}

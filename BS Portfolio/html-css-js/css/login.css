@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: linear-gradient(90deg, rgb(236, 220, 171) 100%, rgb(223, 197, 120) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.center>div {
+    width: 400px;
+    border-radius: 1%;
+    padding: 1%;
+}
+
+.center h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0 0 2% 0;
+}
+
+.center form {
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+.txt_field {
+    position: relative;
+    border-bottom: 2px solid #000000;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.txt_field input {
+    width: 50%;
+    padding: 0 3%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #9c905a;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #bd9334;
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -2px;
+    color: #000000;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 50%;
+}
+
+.pass {
+    margin: -5px 0 30px 5px;
+    color: #767575;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 60%;
+    height: 50px;
+    border: 3px solid;
+    background: #120f0a;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #b58d3d;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: #161616;
+    border-color: #161616;
+    transition: .6s;
+}
+
+.signup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+}
+
+.signup_link a {
+    color: #2691d9;
+    text-decoration: underline;
+}
+
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .center>div {
+        width: 90%;
+        padding: 1%;
+    }
+
+    .center form {
+        padding: 0 1%;
+    }
+}
