@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Best destinations</title>
+    <style>
+        section {
+            display: flex;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+        }
+
+        section .card {
+            position: relative;
+            width: 300px; height: 300px;
+            margin: 20px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        section .card:hover .box { transform: rotateY(180deg); }
+
+        section .card .box {
+            position: absolute;
+            transform: translate(0, 0);
+            width: 100%; height: 100%;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+        }
+
+        section .card .box .imgBox {
+            position: absolute;
+            transform: translate(0, 0);
+            width: 100%; height: 100%;
+        }
+
+        section .card .box .imgBox img {
+            border-radius: 10px; object-fit: cover;
+            width: 100%; height: 100%; }
+
+        .container { padding: 2em; }
+
+        section .card .box .contentBox {
+            position: absolute; transform: translate(0, 0);
+            width: 100%; height: 100%;
+            background: #333333bb;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+            display: flex; align-items: center;
+            justify-content: center;}
+
+        section .card .box .contentBox div {
+            background: linear-gradient(45deg, #0d213f, #0d213f);
+            transform: translateZ(100px); }
+
+        section .card .box .contentBox div h2 {
+            color: #fff; font-size: 20px; letter-spacing: 1px; }
+
+        section .card .box .contentBox div p {
+            line-height: 1.5; color: whitesmoke; }
+    </style>
+</head>
+
+<body>
+<section class="container">
+    <div class="card"> <div class="box">
+    <div class="imgBox"><img src="New-york.jpg" alt="NY"></div>
+    <div class="contentBox">
+    <div><h2>New York City</h2>
+    <p>Manhattan hosts three of the world's top 10
+    most-visited tourist attractions: Times Square, 
+    Central Park, and Grand Central Terminal.</p>
+    </div></div></div></div>
+    <div class="card">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="london.jpg" alt="">
+                </div>
+
+                <div class="contentBox">
+                    <div>
+                        <h2>London</h2>
+                        <p>
+                            London is renowned as a global culture capital. The city is filled with history,
+                            breathtaking sights and
+                            endless tourist attractions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div><div class="card">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="korea.jpg" alt="">
+                </div>
+
+                <div class="contentBox">
+                    <div>
+                        <h2>South Korea</h2>
+                        <p>
+                            South Korea is one of the most famous destinations in the world. Its rich cultural heritage,
+                            stunning
+                            natural wonders, delicious cuisines and globally.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div><div class="card">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="italy.jpg" alt="">
+                </div>
+
+                <div class="contentBox">
+                    <div>
+                        <h2>Italy</h2>
+                        <p>
+                            Italy is well-known for its architecture, culture, art, opera, literature, film, and
+                            fashion. The country is known for its mesmerizing topography.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div><div class="card">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="america.jpg" alt="">
+                </div>
+
+                <div class="contentBox">
+                    <div>
+                        <h2>America</h2>
+                        <p>
+                            The bustling streets of New York City to the serene landscapes of the Grand Canyon, the
+                            United States is
+                            known for its diversity, and cultural influence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div><div class="card">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="spain.jpg" alt="">
+                </div>
+
+                <div class="contentBox">
+                    <div>
+                        <h2>Spain</h2>
+                        <p>
+                            Spain is famous for its culture, delicious food like paella and tapas, and iconic landmarks
+                            such as the
+                            Sagrada Familia and Alhambra.
+                    </div>
+                </div>
+            </div>
+    </div><div class="card">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="bangkok.jpg" alt="">
+                </div>
+
+                <div class="contentBox">
+                    <div>
+                        <h2>Bangkok</h2>
+                        <p>
+                            One of the special things about Bangkok is its shopping scene. Bangkok offers a shopping
+                            experience like
+                            no other.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div><div class="card">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="maldives-island.jpg" alt="">
+                </div>
+
+                <div class="contentBox">
+                    <div>
+                        <h2>Maldives Island</h2>
+                        <p>
+                            Maldives is world-famous for its wide spectrum of marine life, and one of the best ways to
+                            explore it by
+                            snorkelling or scuba diving.
+                    </div>
+                </div>
+            </div>
+</div></section></body></html>
+

@@ -1,0 +1,23 @@
+Item Description:
+This work was done with css, it is very easy to use and efficient, it can be modified in a simple and smooth way,
+It is compatible with all devices, including the phone.
+
+Item Features:
+HTML5
+CSS3
+No Bootstrap
+No javascript
+different colors
+responsive design
+clean code
+Support all browsers
+Easy to customize
+
+NB:
+This product includes HTML and CSS, and is not a WordPress plugin.
+
+
+Thank you for purchasing my template. If you have any questions outside the scope of this help file, 
+feel free to conect in my email.
+
+Email: mahmoudkatga@gmail.com

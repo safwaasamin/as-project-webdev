@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hello World!
+    <script>
+        let num1 = 10;
+        // let num1 = prompt("Enter a number");
+        if (num1 > 0) {
+            console.log(`${num1} positive number`);
+        }
+        else if (num1 < 0) {
+            console.log(`${num1} negative number`);
+        }
+        else {
+            console.log(`${num1} zero`);
+        }
+        // empty string with str.length
+        let str = " ";
+        if(str.length > 0) {
+            console.log(`${str} is not empty`);
+        }
+        else {
+            console.log(`${str} is empty`);
+        }
+        // empty string with !str
+        let str2 = " ";
+        if(!str) {
+            console.log(`${str2} is not empty`);
+        }
+        else {
+            console.log(`${str2} is empty`);
+        }
+
+        // palindrome example 1
+        let num2 = "racecar";
+        if(str === str.split("").reverse().join("")) {
+            console.log(`${num2} is palindrome`);
+        }
+        else {
+            console.log(`${num2} is not palindrome`);
+        }
+        // palindrome example 2
+        let word = "nun";
+        if(str.toLowerCase() === str.toLowerCase().split("").reverse().join("")) {
+            console.log(`${word} is palindrome`);
+        }
+        else {
+            console.log(`${word} is not palindrome`);
+        }
+        // palindrome example 3
+        let word2 = "mam";
+        let reversed = word2.split("").reverse().join("");
+        console.log(reversed);
+        if(word2 == reversed) {
+            console.log(`${word2} is palindrome`);
+        }
+        else {
+            console.log(`${word2} is not palindrome`);
+        }
+        // Array
+        let arr = [1, 2, 3, 4, 5];
+        let large = arr[0];
+        for(let i = 1; i < arr.length; i++) {
+            if(arr[i] > large) {
+                large = arr[i];
+            }
+        }
+        console.log(large);
+
+        // Array largest number using math function
+        let arr2 = [1, 2, 3, 4, 5];
+        let largest = Math.max(...arr2);
+        let smallest = Math.min(...arr2);
+        console.log(largest);
+        console.log(smallest);
+        
+    </script>
+</body>
+</html>
